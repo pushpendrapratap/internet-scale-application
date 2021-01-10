@@ -1,8 +1,9 @@
-1.	back of the envelope calculation:
-		-	storage
-		-	RAM/memory
-		-	bandwidth
-		-	throughput
-		-	latency
+1. `back of the envelope calculation`:
 
-2.	
+    - storage
+    - RAM/memory
+    - bandwidth
+    - throughput
+    - latency
+
+2.

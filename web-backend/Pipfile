@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+py2neo = "==5.0b1"
+sortedcontainers = "==2.3.0"
+django = "==3.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

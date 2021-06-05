@@ -51,50 +51,58 @@
 
 2.  **Design a tic-tac-toe:**
 
-    requirement gathering:
-
-    ***
-
-    -   nXn board - 2 player game - 'x' and 'o' are the only symbol - assign symbols to user randomly - 'x' starts first
+        requirement gathering:
+        -----------------------
+        - nXn board - 2 player game
+        - 'x' and 'o' are the only symbol
+        - assign symbols to user randomly
+        - 'x' starts first
 
         classes:
-
+        ----------------
         -   game:
         -   board:
         -   player (it will be abstract class because it has symbol as attribute and no instance of it will be needed to create. Also, it can't be interface because it has symbol as attribute):
-            -   human
-            -   bot
+        	-   human
+        	-   bot
         -   symbol:
         -   strategy (abstract class):
 
         class diagram:
-
+        ---------------------
         -   player:
-            -   symbol
-            -   make_move()
+        	-   symbol
+        	-   make_move()
 
         relationship:
-
+        ----------------------------
         -   game - board -> composition
         -   symbols as ENUM
         -   game - strategy -> composition (strategy pattern)
 
         NOTE:
-
+        -----------------------------
         -   interface can't have attributes, everything will be static. Also, it allows multiple inheritance
         -   interface has collections of methods. It's group of behavior. usually verb.
         -   abstract class is usually noun
         -   strategy design pattern (usecase - diff. game can have diff. difficulty level e.g., bot vs human, bot vs bot):
-            -   cat - hunting_behavior -> composition
-            -   hunting_behavior (abstract class):
-                -   stalk
-                -   chase
-                -   etc.
+        	-   cat - hunting_behavior -> composition
+        	-   hunting_behavior (abstract class):
+        		-   stalk
+        		-   chase
+        		-   etc.
 
-3.  snake and ladder:
-    requirement gathering: - dimension of board can vary (nXn) - provide board state before start (once game starts, yuo can't change it) - no. of dices can vary - player type (bot, human, etc.)
+3.  **snake and ladder:**
+
+        requirement gathering:
+        --------------------------------
+        - dimension of board can vary (nXn)
+        - provide board state before start (once game starts, yuo can't change it)
+        - no. of dices can vary
+        - player type (bot, human, etc.)
 
         classes:
+        -------------------
         - game:
         - player:
         	- position
